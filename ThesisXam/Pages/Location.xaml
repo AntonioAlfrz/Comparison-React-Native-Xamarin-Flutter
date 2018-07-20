@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ThesisXam.Pages.Location"
+             Title="Location">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Location Screen"
+                VerticalOptions="CenterAndExpand" 
+                   LineBreakMode="WordWrap"
+                HorizontalOptions="CenterAndExpand"
+                x:Name="label"/>
+            <Button Text="Get location"    
+                x:Name="locButton" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ThesisXam.Pages.List"
+             Title="ListView">
+    <ContentPage.Content>
+        <StackLayout>
+            <Entry x:Name="entry" Keyboard="Numeric" Placeholder="Insert number" Text="10"/>
+            <Button x:Name="button" Text="Update"/>
+            <ListView CachingStrategy="RecycleElement" x:Name="myList">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ImageCell Text="{Binding Path=name.first}" Detail="{Binding email}" ImageSource="{Binding Path=picture.medium}"></ImageCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+
+    </ContentPage.Content>
+</ContentPage>

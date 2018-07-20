@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ThesisXam.Pages.Tests"
+             Title="Tests">
+    <ContentPage.Content>
+        <StackLayout Spacing="10" Padding="10">
+            <Entry x:Name="entry" Keyboard="Numeric" Placeholder="Insert number" Text="10"/>
+            <Button x:Name="ocrButton" Text="Compute OCR"/>
+            <Button x:Name="fibiter" Text="Fibonacci number (Iterative)" Clicked="FibIter"/>
+            <Button x:Name="fibrec" Text="Fibonacci number (Recursive)" Clicked="FibRec"/>
+            <Button x:Name="powmat" Text="Power matrix" Clicked="PowMat"/>
+            <Button x:Name="primeButton" Text="Sieve of Eratosthenes" Clicked="DoPrimes"/>
+
+            <Label Text="Waiting for results"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand"
+                   x:Name="time"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
